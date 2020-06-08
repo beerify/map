@@ -1,6 +1,7 @@
 import { Map, GoogleApiWrapper } from 'google-maps-react'
 import React from 'react'
 import { Dimensions, Platform, StyleSheet, Text, View } from 'react-native'
+import ProvPick from './provpick'
 import locations from '../constants/locations'
 
 const { iah } = locations
@@ -12,6 +13,7 @@ const styles = StyleSheet.create({
     width: width * 0.9,
   },
 })
+
 const gmap = {
   position: 'relative',  
   width: '100%',
@@ -19,9 +21,11 @@ const gmap = {
 }
 
 function WebMap(props) {
-  console.log(props.google)
+
+
   return (
     <View id='map' style={styles.container}>
+      <ProvPick />
       <Text>
         <Map
           google={props.google}

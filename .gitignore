@@ -16,4 +16,4 @@ web-build/
 # macOS
 .DS_Store
 
-data/
+kmldata/

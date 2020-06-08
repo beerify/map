@@ -1,0 +1,57 @@
+[
+  {
+    "Address": "2A Collins Dr, Whitehorse, YT Y1A 0A8, Canada",
+    "Brewery": "Deep Dark Wood Brewing Company",
+    "City": "Whitehorse",
+    "Email": "",
+    "GooglePlaceId": "ChIJ0RUhj6RRVFERq2ziDVYI4mU",
+    "Lat": 60.64399419999999,
+    "Lng": -135.0300562,
+    "Phone": "",
+    "PostalCode": "Y1A 0A8",
+    "Region": "",
+    "Status": "",
+    "Twitter": null,
+    "Website": "",
+    "Year Opened": ""
+  },
+  {
+    "Address": "102 Copper Rd, Whitehorse, YT Y1A 2Z6, Canada",
+    "Brewery": "Yukon Brewing",
+    "City": "Whitehorse",
+    "Email": "",
+    "GooglePlaceId": "ChIJmb8kSZZEVFER5oNxUJWOwUE",
+    "Lat": 60.7380556,
+    "Lng": -135.0788889,
+    "Phone": "",
+    "PostalCode": "Y1A 2Z6",
+    "Region": "",
+    "Status": "",
+    "Twitter": [
+      {
+        "avatar": "https://pbs.twimg.com/profile_images/460926775548067840/xyF0ltj-_normal.jpeg",
+        "banner": "https://pbs.twimg.com/profile_banners/279145785/1412961918",
+        "description": "The oldest brewery North of 60 - Yukon Brewing has been crafting internationally renowned beer since 1997. PS: We also make whisky! https://t.co/PFYWFOLN3m",
+        "handle": "yukonbeer",
+        "id": 279145785,
+        "location": "Whitehorse, Yukon",
+        "name": "Yukon Brewing",
+        "website": "http://www.yukonbeer.com",
+        "websiteShort": "http://t.co/AMGTjaMKYm"
+      },
+      {
+        "avatar": "https://pbs.twimg.com/profile_images/756546634067107840/_jApeczX_normal.jpg",
+        "banner": "https://pbs.twimg.com/profile_banners/461789650/1452023320",
+        "description": "Sales guy @ Yukon Brewing & Two Brewers Single Malt Whisky. Collector of old advertising.   All opinions are my own",
+        "handle": "yukondave_edm",
+        "id": 461789650,
+        "location": "Edmonton",
+        "name": "Dave Gardner",
+        "website": "http://yukonbeer.com",
+        "websiteShort": "https://t.co/44cWTHwCkK"
+      }
+    ],
+    "Website": "",
+    "Year Opened": ""
+  }
+]

@@ -6,11 +6,13 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fafafa',
-    height: 800,
-    width: 800,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    height: '100%',
   },
   contentContainer: {
-    paddingTop: 15,
+    paddingTop: 5,
   },
   optionIconContainer: {
     marginRight: 12,
@@ -32,11 +34,31 @@ export default StyleSheet.create({
     marginTop: 1,
   },
   mapStyle: {
-    width: width,
-    height: height * 0.9,
+    width: width * .86,
+    height: height * 0.76,
   },
   picker: {
-    height: 120,
-    width: 300,
-  }
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginLeft: 10,
+    paddingLeft: 10,
+    height: 60,
+    width: '80%',
+  },
+  pickerWrapper: {
+    borderColor: '#fcfcfc',
+    borderWidth: 1,
+    backgroundColor: 'white',
+    borderRadius: 4
+ },
+ pickerContent: {
+    color: 'black',
+    backgroundColor: 'transparent',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginLeft: 10,
+    paddingLeft: 10,
+    height: 60,
+    width: 250,
+ },
 })
