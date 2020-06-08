@@ -1,9 +1,13 @@
-import { StyleSheet } from 'react-native'
+import { Dimensions, StyleSheet } from 'react-native'
+
+const { height, width } = Dimensions.get('window')
 
 export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fafafa',
+    height: 800,
+    width: 800,
   },
   contentContainer: {
     paddingTop: 15,
@@ -26,5 +30,9 @@ export default StyleSheet.create({
     fontSize: 15,
     alignSelf: 'flex-start',
     marginTop: 1,
+  },
+  mapStyle: {
+    width,
+    height,
   },
 })

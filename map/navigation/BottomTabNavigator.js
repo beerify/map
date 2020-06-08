@@ -1,9 +1,15 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import * as React from 'react'
 
+import { Platform } from 'react-native'
+
 import TabBarIcon from '../components/TabBarIcon'
 import HomeScreen from '../screens/HomeScreen'
-import LinksScreen from '../screens/LinksScreen'
+
+const Map = Platform.select({
+  web: () => require('../screens/WebMap').default,
+  default: () => require('../screens/MobileMap').default,
+})()
 
 const BottomTab = createBottomTabNavigator()
 const INITIAL_ROUTE_NAME = 'Home'
@@ -13,7 +19,7 @@ export default function BottomTabNavigator({ navigation, route }) {
   // currently active tab. Learn more in the documentation:
   // https://reactnavigation.org/docs/en/screen-options-resolution.html
   navigation.setOptions({ headerTitle: getHeaderTitle(route) })
-
+  console.log(Map)
   return (
     <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
       <BottomTab.Screen
@@ -26,7 +32,7 @@ export default function BottomTabNavigator({ navigation, route }) {
       />
       <BottomTab.Screen
         name="Links"
-        component={LinksScreen}
+        component={Map}
         options={{
           title: 'Resources',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,

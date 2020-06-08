@@ -22,11 +22,25 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBX9vQ8Vor-iw4ZZvrTR5STac1f0R9RsiQ"
+        }
+      }
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyBX9vQ8Vor-iw4ZZvrTR5STac1f0R9RsiQ"
+      }
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "name": "beer map",
+      "config": {
+        "googleMapsApiKey": "AIzaSyBX9vQ8Vor-iw4ZZvrTR5STac1f0R9RsiQ"
+      }
     }
   }
 }
