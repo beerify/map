@@ -7,12 +7,12 @@ import TabBarIcon from '../components/TabBarIcon'
 import HomeScreen from '../screens/HomeScreen'
 
 const Map = Platform.select({
-  web: () => require('../screens/WebMap').default,
-  default: () => require('../screens/MobileMap').default,
+  web: () => require('../components/WebMap').default,
+  default: () => require('../components/MobileMap').default,
 })()
 
 const BottomTab = createBottomTabNavigator()
-const INITIAL_ROUTE_NAME = 'Home'
+const INITIAL_ROUTE_NAME = 'Map'
 
 export default function BottomTabNavigator({ navigation, route }) {
   // Set the header title on the parent stack navigator depending on the
@@ -22,20 +22,21 @@ export default function BottomTabNavigator({ navigation, route }) {
   console.log(Map)
   return (
     <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
+
       <BottomTab.Screen
-        name="Home"
-        component={HomeScreen}
+        name='Map'
+        component={Map}
         options={{
-          title: 'Get Started',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          title: 'Map',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name='md-map' />,
         }}
       />
       <BottomTab.Screen
-        name="Links"
-        component={Map}
+        name='Info'
+        component={HomeScreen}
         options={{
-          title: 'Resources',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
+          title: 'Info',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name='md-code-working' />,
         }}
       />
     </BottomTab.Navigator>
@@ -46,10 +47,10 @@ function getHeaderTitle(route) {
   const routeName = route.state?.routes[route.state.index]?.name ?? INITIAL_ROUTE_NAME
 
   switch (routeName) {
-    case 'Home':
-      return 'How to get started'
-    case 'Links':
-      return 'Links to learn more'
+    case 'Info':
+      return 'About this app'
+    case 'Map':
+      return 'Beer Map'
     default:
       return null
   }

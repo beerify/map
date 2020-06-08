@@ -1,7 +1,7 @@
 import { Dimensions, StyleSheet } from 'react-native'
 
 const { height, width } = Dimensions.get('window')
-
+console.log(width, height)
 export default StyleSheet.create({
   container: {
     flex: 1,
@@ -32,7 +32,11 @@ export default StyleSheet.create({
     marginTop: 1,
   },
   mapStyle: {
-    width,
-    height,
+    width: width,
+    height: height * 0.9,
   },
+  picker: {
+    height: 120,
+    width: 300,
+  }
 })

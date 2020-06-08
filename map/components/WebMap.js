@@ -1,20 +1,17 @@
 import { Map, GoogleApiWrapper } from 'google-maps-react'
 import React from 'react'
 import { Dimensions, Platform, StyleSheet, Text, View } from 'react-native'
+import locations from '../constants/locations'
 
+const { iah } = locations
 const { height, width } = Dimensions.get('window')
 
 const styles = StyleSheet.create({
   container: {
-    height: height  * 0.9,
-    width: width,
+    height: height * 0.9,
+    width: width * 0.9,
   },
-  
 })
-const iah = {
-  lat: 43.6655507,
-  lng: -79.4675274,
-}
 const gmap = {
   position: 'relative',  
   width: '100%',
@@ -29,7 +26,7 @@ function WebMap(props) {
         <Map
           google={props.google}
           style={gmap}
-          zoom={14}
+          zoom={12}
 
           initialCenter={{
             lat: iah.lat,
