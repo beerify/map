@@ -13,7 +13,7 @@ Mobile apps should be available soon
 ## Other doc files
 | Link      |       Contents |
 |----------|:-------------|
-| [CONTRIBUTING.md](https://github.com/beerify/map/blob/master/README.md) | Ways you can contribute or collaborate |
+| [CONTRIBUTING.md](https://github.com/beerify/map/blob/master/CONTRIBUTING.md) | Ways you can contribute or collaborate |
 | [TODO.md](https://github.com/beerify/map/blob/master/TODO.md)  | A list of things not yet done   |
 | [DEVELOPMENT.md](https://github.com/beerify/map/blob/master/DEVELOPMENT.md)  | how to install and run the code|
 
