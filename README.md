@@ -9,9 +9,20 @@ A mobile friendly beer map created in React Native using [Expo](https://expo.io/
 
 ## Mobile (WIP)
 
-[Mobile Apps](https://expo.io/@beerify/map)
+### Expo App
 
-[!qr](https://github.com/beerify/map/blob/master/expo.png)
+You must download the Expo app to run the Beer Map on your phone as an app as opposed to in a web browser
+[Expo for iOS](https://itunes.apple.com/app/apple-store/id982107779)
+
+[Expo for Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www)
+
+### Beer Map App
+
+[Mobile Apps Link](https://expo.io/@beerify/map)
+
+Scan This Code in the Expo App:
+
+![qr](https://github.com/beerify/map/blob/master/expo.png)
 
 ## Other doc files
 | Link      |       Contents |
