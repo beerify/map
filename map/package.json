@@ -1,8 +1,8 @@
 {
-  "homepage": "https://beerify.github.io/map/",
+  "homepage": "https://beerify.github.io/map",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "predeploy": "expo build:web",
+    "predeploy": "expo build:web && cp web-build/index.html web-build/404.html",
     "deploy": "gh-pages -d web-build",
     "start": "expo start",
     "android": "expo start --android",

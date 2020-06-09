@@ -6,7 +6,7 @@ import { Platform } from 'react-native'
 import TabBarIcon from '../components/TabBarIcon'
 import HomeScreen from '../screens/HomeScreen'
 
-const web = Platform.OS === web ? require('../components/WebMap').default : null
+const web = Platform.OS === 'web' ? require('../components/WebMap').default : <div></div>
 
 const Map = Platform.select({
   web: () => web,
