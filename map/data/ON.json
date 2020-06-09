@@ -809,7 +809,7 @@
         "name": "Belgian Moon",
         "website": "http://www.belgianmoon.ca",
         "websiteShort": "https://t.co/7qcchGMK1b"
-      },
+      }
     ],
     "Website": "",
     "Year Opened": ""
@@ -2910,15 +2910,15 @@
     "Year Opened": ""
   },
   {
-    "Address": "1 N Main St, Phoenixville, PA 19460, USA",
+    "Address": "185 Oakland Rd, Scotland, ON N0E 1R0",
     "Brewery": "Flux Brewing Company",
-    "City": "Phoenixville",
+    "City": "Scotland",
     "Email": "",
     "GooglePlaceId": "ChIJtViJp_qRxokRO8mN17dQUVk",
-    "Lat": 40.134451,
-    "Lng": -75.516042,
+    "Lat": 43.03868006982289,
+    "Lng": -80.28806152299586,
     "Phone": "",
-    "PostalCode": "19460",
+    "PostalCode": "N0E 1R0",
     "Region": "",
     "Status": "",
     "Twitter": null,
@@ -3351,15 +3351,15 @@
     "Year Opened": ""
   },
   {
-    "Address": "117 W Louis Glick Hwy, Jackson, MI 49201, USA",
+    "Address": "295 Ainslie St S, Cambridge, ON N1R 3L3",
     "Brewery": "Grand River Brewing",
-    "City": "Jackson",
+    "City": "Cambridge",
     "Email": "",
     "GooglePlaceId": "ChIJc6KiNWUlPYgRhJAGhHKH-hA",
-    "Lat": 42.2492364,
-    "Lng": -84.4075362,
-    "Phone": "",
-    "PostalCode": "49201",
+    "Lat": 43.35133201515959,
+    "Lng": -80.31269963299718,
+    "Phone": "+15196203233",
+    "PostalCode": "N1R 3L3",
     "Region": "",
     "Status": "",
     "Twitter": [
@@ -3551,15 +3551,15 @@
     "Year Opened": ""
   },
   {
-    "Address": "737 2nd St, Henderson, KY 42420, USA",
+    "Address": "128A Sterling Rd, Toronto, ON M6R 2B7",
     "Brewery": "Henderson Brewing co",
     "City": "Henderson",
     "Email": "",
-    "GooglePlaceId": "ChIJ__8zmQgpcIgRTBsIvuh1p38",
-    "Lat": 37.8374792,
-    "Lng": -87.58262189999999,
+    "GooglePlaceId": null,
+    "Lat": 43.67227573827118,
+    "Lng": -79.48042842978695,
     "Phone": "",
-    "PostalCode": "42420",
+    "PostalCode": "M6R 2B7",
     "Region": "",
     "Status": "",
     "Twitter": [
@@ -3691,22 +3691,6 @@
         "websiteShort": "https://t.co/BYOQqOpe7B"
       }
     ],
-    "Website": "",
-    "Year Opened": ""
-  },
-  {
-    "Address": "1000 White St SW, Atlanta, GA 30310, USA",
-    "Brewery": "Hop City Brewing Company",
-    "City": "Atlanta",
-    "Email": "",
-    "GooglePlaceId": "ChIJyzi4E7wD9YgRZyPzZhKUYqo",
-    "Lat": 33.7299389,
-    "Lng": -84.4187309,
-    "Phone": "",
-    "PostalCode": "30310",
-    "Region": "",
-    "Status": "",
-    "Twitter": null,
     "Website": "",
     "Year Opened": ""
   },
@@ -3977,15 +3961,15 @@
     "Year Opened": ""
   },
   {
-    "Address": "4067 Adams Ave, San Diego, CA 92116, USA",
+    "Address": "299 Augusta Ave, Toronto, ON M5T 2M2",
     "Brewery": "Kensington Brewing Co",
-    "City": "San Diego",
+    "City": "Toronto",
     "Email": "",
-    "GooglePlaceId": "ChIJyZDGf8hV2YARStk_d9JM7vc",
-    "Lat": 32.7630667,
-    "Lng": -117.1079211,
+    "GooglePlaceId": null,
+    "Lat": 43.6565068,
+    "Lng": -79.4047655,
     "Phone": "",
-    "PostalCode": "92116",
+    "PostalCode": "M5T 2M2",
     "Region": "",
     "Status": "",
     "Twitter": [
@@ -4542,7 +4526,7 @@
         "name": "Market Brewing Co.",
         "website": "http://www.marketbrewingco.com",
         "websiteShort": "https://t.co/xW0dEwanm9"
-      },
+      }
     ],
     "Website": "",
     "Year Opened": ""
@@ -5068,15 +5052,15 @@
     "Year Opened": ""
   },
   {
-    "Address": "203 Brooks St, Wake Forest, NC 27587, USA",
+    "Address": "11 Ritchie Dr, Nobel, ON P0G 1G0",
     "Brewery": "Norse Brewery",
-    "City": "Wake Forest",
+    "City": "Nobel",
     "Email": "",
     "GooglePlaceId": "ChIJY7ODJiJTrIkRaj6t6WbgglY",
-    "Lat": 35.9774329,
-    "Lng": -78.5083781,
+    "Lat": 45.49260650813936,
+    "Lng": -80.20258756931715,
     "Phone": "",
-    "PostalCode": "27587",
+    "PostalCode": "P0G 1G0",
     "Region": "",
     "Status": "",
     "Twitter": [
@@ -5404,15 +5388,15 @@
     "Year Opened": ""
   },
   {
-    "Address": "770 1st Ave N, St. Petersburg, FL 33701, USA",
+    "Address": "2477 Kaladar Ave, Ottawa, ON K1V 8B9",
     "Brewery": "Overflow Brewing Company",
-    "City": "St. Petersburg",
+    "City": "Kaladar",
     "Email": "",
     "GooglePlaceId": "ChIJq6rGFYHhwogRLHN_Nr0nzY0",
-    "Lat": 27.7718397,
-    "Lng": -82.6445672,
+    "Lat": 45.37608637226324,
+    "Lng": -75.66926414417314,
     "Phone": "",
-    "PostalCode": "33701",
+    "PostalCode": "K1V 8B9",
     "Region": "",
     "Status": "",
     "Twitter": [
@@ -5428,22 +5412,6 @@
         "websiteShort": null
       }
     ],
-    "Website": "",
-    "Year Opened": ""
-  },
-  {
-    "Address": "685 Parsons Ave, Columbus, OH 43206, USA",
-    "Brewery": "Parsons Brewing Company",
-    "City": "Columbus",
-    "Email": "",
-    "GooglePlaceId": "ChIJgVSLRvqJOIgRXnnacwWwyUM",
-    "Lat": 39.9498045,
-    "Lng": -82.98278959999999,
-    "Phone": "",
-    "PostalCode": "43206",
-    "Region": "",
-    "Status": "",
-    "Twitter": null,
     "Website": "",
     "Year Opened": ""
   },
@@ -5513,22 +5481,6 @@
     "Lng": -78.7393122,
     "Phone": "",
     "PostalCode": "K9V 4C3",
-    "Region": "",
-    "Status": "",
-    "Twitter": null,
-    "Website": "",
-    "Year Opened": ""
-  },
-  {
-    "Address": "7925 Marty St, Overland Park, KS 66204, USA",
-    "Brewery": "Pinball Brew Lab",
-    "City": "Overland Park",
-    "Email": "",
-    "GooglePlaceId": "ChIJudUGOXHswIcRcPtrYBSTaDc",
-    "Lat": 38.9852212,
-    "Lng": -94.66960399999999,
-    "Phone": "",
-    "PostalCode": "66204",
     "Region": "",
     "Status": "",
     "Twitter": null,
@@ -5756,22 +5708,6 @@
         "websiteShort": "https://t.co/XQMsQbm1j3"
       }
     ],
-    "Website": "",
-    "Year Opened": ""
-  },
-  {
-    "Address": "2211 US-2, Danville, VT 05828, USA",
-    "Brewery": "Red Barn Brewing Company",
-    "City": "Danville",
-    "Email": "",
-    "GooglePlaceId": "ChIJg3ypQUdMtEwR7MwAFc2tysI",
-    "Lat": 44.430189,
-    "Lng": -72.10364799999999,
-    "Phone": "",
-    "PostalCode": "05828",
-    "Region": "",
-    "Status": "",
-    "Twitter": null,
     "Website": "",
     "Year Opened": ""
   },
@@ -6350,7 +6286,7 @@
         "name": "Side Launch Brewing",
         "website": "http://www.sidelaunchbrewing.com",
         "websiteShort": "https://t.co/i67mVGWTXn"
-      },
+      }
     ],
     "Website": "",
     "Year Opened": ""
@@ -7897,34 +7833,6 @@
         "name": "Willibald Farm Distillery & Kitchen",
         "website": "http://drinkwillibald.com",
         "websiteShort": "https://t.co/A4GyoIECeQ"
-      }
-    ],
-    "Website": "",
-    "Year Opened": ""
-  },
-  {
-    "Address": "2121 Gettler St, Dyer, IN 46311, USA",
-    "Brewery": "Windmill Brewery",
-    "City": "Dyer",
-    "Email": "",
-    "GooglePlaceId": "ChIJ_-QoRh7iEYgRGb76luv6BMI",
-    "Lat": 41.4933336,
-    "Lng": -87.5226514,
-    "Phone": "",
-    "PostalCode": "46311",
-    "Region": "",
-    "Status": "",
-    "Twitter": [
-      {
-        "avatar": "https://pbs.twimg.com/profile_images/771683257872252929/zQjYLk6Q_normal.jpg",
-        "banner": "https://pbs.twimg.com/profile_banners/721037725067927552/1481889917",
-        "description": "",
-        "handle": "Windmill_Beer",
-        "id": 721037725067927600,
-        "location": "5 Newport Drive, Johnstown, ON",
-        "name": "Windmill Brewery",
-        "website": "http://www.windmillbrewery.ca",
-        "websiteShort": "https://t.co/Ivgg5IWveX"
       }
     ],
     "Website": "",

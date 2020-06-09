@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { Dimensions, Picker, Platform, Text, View } from 'react-native'
 import * as ScreenOrientation from 'expo-screen-orientation';
 import styles from './MobileMapStyle'
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps'
 import locations from '../constants/locations'
 import provinces from '../constants/provinces'
 import ProvPick from './provpick'
 
 const { iah } = locations
+
+const ON = require('../data/ON.json')
 
 export default function MobileMap() {
   const [w, setW] = useState(Dimensions.get('window').width)
@@ -29,23 +31,7 @@ export default function MobileMap() {
       height: h,
     }
   }
-/*
-      <Picker
-        selectedValue={selected}
-        style={styles.picker}
-        onValueChange={(val, i) => setSelected(val)}
-      >
-        {Object.keys(provinces).map(p => {
-          return (
-            <Picker.Item
-              label={provinces[p]}
-              value={p}
-              key={p}
-            />
-          )
-        })}
-      </Picker>
-*/
+
   return (
     <View
       style={styles.container}
