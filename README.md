@@ -1,13 +1,17 @@
 [![Version](https://img.shields.io/badge/VERSION-0.2-BLUE)](https://img.shields.io/badge/VERSION-0.2-BLUE) [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0.txt)
 # Canada Beer Map
 
+*Please note this is a Work in Progress*
+
 A mobile friendly beer map created in React Native using [Expo](https://expo.io/)
+
+The Beer Map is available as a website or as a mobile app. It is not available in app stores and must be loaded via the Expo app (See below)
 
 ## Website
 
 [Web Demo](https://beerify.github.io/map/)
 
-## Mobile (WIP)
+## Mobile
 
 ### Expo App
 
