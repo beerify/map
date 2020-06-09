@@ -1,21 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { Dimensions, Picker, Platform, Text, View } from 'react-native'
-// import * as ScreenOrientation from 'expo-screen-orientation';
 import styles from './MobileMapStyle'
 import MapView, { CallOut, Marker, PROVIDER_GOOGLE } from 'react-native-maps'
 import icons from '../constants/icon'
 import locations from '../constants/locations'
 import provinces from '../constants/provinces'
-import ProvPick from './provpick'
+import ProvPick from './ProvPick'
 import provData from '../assets/data'
 
 const { getAvatar, icon, point } = icons
 const { iah } = locations
 
 export default function MobileMap() {
-  // const [w, setW] = useState(Dimensions.get('window').width)
-  // const [h, setH] = useState(Dimensions.get('window').height)
-
   const [cent, setCent] = useState({
     latitude: iah.lat,
     longitude: iah.lng,
@@ -28,16 +24,6 @@ export default function MobileMap() {
 
   useEffect(() => {
     setData(provData['ON'])
-    // setCent({
-    //   latitude: iah.lat,
-    //   longitude: iah.lng,
-    // })
-    // ScreenOrientation.addOrientationChangeListener(() => {
-    //   const { height, width } = Dimensions.get('window')
-    //   setH(height)
-    //   setW(width)
-
-    // })
   }, [])
 
   const pickerCallback = (prov, cent) => {

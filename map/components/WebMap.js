@@ -1,7 +1,7 @@
 import { InfoWindow, Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 import React, { useEffect, useState } from 'react'
 import { Dimensions, Platform, StyleSheet, Text, View } from 'react-native'
-import ProvPick from './provpick'
+import ProvPick from './ProvPick'
 import icons from '../constants/icon'
 import locations from '../constants/locations'
 import provData from '../assets/data'

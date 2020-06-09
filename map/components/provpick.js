@@ -4,12 +4,7 @@ import provinces from '../constants/provinces'
 import centmap from '../constants/centmap'
 import styles from './MobileMapStyle'
 
-// TODO use Context to share the picker state
 export default function ProvPick({callback}) {
-
-  // we're only doing ontario for now
-  // return null
-
   const [selected, setSelected] = useState('ON')
   const web = Platform.OS === 'web'
 
