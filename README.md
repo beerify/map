@@ -1,3 +1,4 @@
+[![Version](https://img.shields.io/badge/VERSION-0.2-BLUE)](https://img.shields.io/badge/VERSION-0.2-BLUE) [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0.txt)
 # Canada Beer Map
 
 A mobile friendly beer map created in React Native using [Expo](https://expo.io/)
@@ -25,7 +26,7 @@ Mobile apps should be available soon
 - This is the backend there is no database
 
 ### Errors in Data
-The scripts that imported the data are quite imperfect. Please create an issue or submit a pull request to help fix
+The scripts that imported the data are imperfect. Please create an issue or submit a pull request to help fix any issues such as incorrect location
 
 ### Ontario Specific Data (Not Implemented)
 - A CSV was exported from a spreadsheet provided by Jordan St. John

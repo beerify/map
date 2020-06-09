@@ -8,6 +8,9 @@
 - download twitter/ig avatars for local consumption
   - we need larger images for the mobile view
   - using generics only for now
+- fix page refresh
+  - site crashes if refreshed
+  - figure out hosting with gh-pages
 
 ## Issues
 
