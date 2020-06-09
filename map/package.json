@@ -1,7 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "build:web": "expo build:web && mv web-build docs",
+    "build:web": "expo build:web && mv web-build docs && mv docs ..",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
