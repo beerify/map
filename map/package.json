@@ -1,7 +1,9 @@
 {
+  "homepage": "https://beerify.github.io/map/",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "build:web": "expo build:web && mv web-build docs && mv docs ..",
+    "predeploy": "expo build:web",
+    "deploy": "gh-pages -d web-build",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -47,6 +49,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "gh-pages": "^3.0.0",
     "jest-expo": "~37.0.0"
   },
   "private": true
