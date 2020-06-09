@@ -5,6 +5,9 @@
 - city select / search
 - brewery select / search
 - mobile views and renders
+- download twitter/ig avatars for local consumption
+  - we need larger images for the mobile view
+  - using generics only for now
 
 ## Issues
 

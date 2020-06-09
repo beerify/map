@@ -2,11 +2,11 @@ import { InfoWindow, Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 import React, { useEffect, useState } from 'react'
 import { Dimensions, Platform, StyleSheet, Text, View } from 'react-native'
 import ProvPick from './provpick'
+import icons from '../constants/icon'
 import locations from '../constants/locations'
+import provData from '../assets/data'
 
-// const ON = require('../data/ON.json')
-// console.log(ON)
-
+const { getAvatar, icon, point } = icons
 const { iah } = locations
 const { height, width } = Dimensions.get('window')
 
@@ -22,19 +22,9 @@ const gmap = {
   width: '100%',
   height: '100%'
 }
-const point = 16
-const icon = 32
-const generic = 'https://freeiconshop.com/wp-content/uploads/edd/beer-solid.png'
-
-// todo generic icon instead of null
-const getAvatar = ({Twitter}) => {
-  if (!Twitter || !Twitter.length) return generic
-  if (!Twitter[0].avatar) return generic
-  return Twitter[0].avatar
-}
-
 
 function WebMap(props) {
+  if (Platform.OS !== 'web') return null
   const [cent, setCent] = useState(locations.iah)
   const [prov, setProv] = useState('ON')
   const [data, setData] = useState([])
@@ -44,15 +34,14 @@ function WebMap(props) {
 
   // set initial state
   useEffect(() => {
-    const data = require(`../data/ON.json`)
-    setData(data)
+    setData(provData['ON'])
   }, [])
 
   const pickerCallback = (prov, cent) => {
+    if (!prov) return
     setCent(cent)
     setProv(prov)
-    const data = require(`../data/${prov}.json`)
-    setData(data)
+    setData(provData[prov])
   }
 
   const handleInfoClose = () => {

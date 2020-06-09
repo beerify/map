@@ -32,7 +32,7 @@ export default StyleSheet.create({
     marginHorizontal: 50,
   },
   homeScreenFilename: {
-    marginVertical: 7,
+    // marginVertical: 7,
   },
   codeHighlightText: {
     color: 'rgba(96,100,109, 0.8)',
@@ -45,8 +45,9 @@ export default StyleSheet.create({
   getStartedText: {
     fontSize: 17,
     color: 'rgba(96,100,109, 1)',
-    lineHeight: 24,
+    lineHeight: 45,
     textAlign: 'center',
+    marginTop: 25,
   },
   tabBarInfoContainer: {
     position: 'absolute',

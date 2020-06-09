@@ -1,33 +1,43 @@
 import * as React from 'react'
-import { Text, View } from 'react-native'
+import { Linking, Text, View } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 import { MonoText } from '../components/StyledText'
 import styles from './HomeStyle'
+import { FontAwesome } from '@expo/vector-icons'
 
 export default function HomeScreen() {
+  const ghLink = () => Linking.openURL('https://github.com/beerify/map')
   return (
     <View style={styles.container}>
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
         <View style={styles.getStartedContainer}>
 
-          <Text style={styles.getStartedText}>Beer Map</Text>
-
           <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-            <MonoText>screens/HomeScreen.js</MonoText>
+            <MonoText>
+              Beer Map Open Source Project
+            </MonoText>
           </View>
 
-          <Text style={styles.getStartedText}>
-            Change any of the text, save the file, and your app will automatically reload.
+          <Text style={styles.getStartedText} onPress={ghLink}>
+            <FontAwesome
+                name='github'
+                size={30}
+                style={{color: 'red'}} 
+            /> Visit GitHub Project
           </Text>
         </View>
 
       </ScrollView>
 
       <View style={styles.tabBarInfoContainer}>
-        <Text style={styles.tabBarInfoText}>This is a tab bar. You can edit it in:</Text>
+        <Text style={styles.tabBarInfoText}>
+
+        </Text>
 
         <View style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-          <MonoText style={styles.codeHighlightText}>navigation/BottomTabNavigator.js</MonoText>
+          <MonoText style={styles.codeHighlightText}>
+            Contributions Are Welcome
+          </MonoText>
         </View>
       </View>
     </View>
