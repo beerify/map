@@ -62,10 +62,15 @@ function WebMap(props) {
   }
 
   const handleClick = (props, marker, e, brewery) => {
+    handleMapClose()
     setActive(marker)
     setOpenInfo(true)
     setInfoBrewery(brewery)
   }
+
+  // if we click the map while a marker is open it will close but will be unhandled
+  const handleMapClose = () => openInfo && handleInfoClose()
+
 
   return (
     <View id='map' style={styles.container}>
@@ -77,11 +82,13 @@ function WebMap(props) {
           zoom={7}
           center={cent}
           initialCenter={locations.iah}
+          onClick={handleMapClose}
         >
           <InfoWindow
             visible={openInfo}
             marker={active}
             onClose={handleInfoClose}
+            o
           >
             <div>
               {infoBrewery?.Brewery}
