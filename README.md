@@ -9,7 +9,9 @@ A mobile friendly beer map created in React Native using [Expo](https://expo.io/
 
 ## Mobile (WIP)
 
-Mobile apps should be available soon
+[Mobile Apps](https://expo.io/@beerify/map)
+
+[!qr](https://github.com/beerify/map/blob/master/expo.png)
 
 ## Other doc files
 | Link      |       Contents |
