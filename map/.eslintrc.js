@@ -31,6 +31,7 @@ module.exports = {
     'import/no-named-as-default': 0,
     'import/no-named-as-default-member': 0,
     'import/prefer-default-export': 0,
+    'jsx-quotes': 0,
     'no-use-before-define': 0,
     'object-curly-newline': 0,
     'react/jsx-filename-extension': 0,

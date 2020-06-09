@@ -1,12 +1,12 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import * as React from 'react'
+import React, { Fragment } from 'react'
 
 import { Platform } from 'react-native'
 
 import TabBarIcon from '../components/TabBarIcon'
 import HomeScreen from '../screens/HomeScreen'
 
-const web = Platform.OS === 'web' ? require('../components/WebMap').default : <div></div>
+const web = Platform.OS === 'web' ? require('../components/WebMap').default : <Fragment></Fragment>
 
 const Map = Platform.select({
   web: () => web,
@@ -23,7 +23,6 @@ export default function BottomTabNavigator({ navigation, route }) {
   navigation.setOptions({ headerTitle: getHeaderTitle(route) })
   return (
     <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
-
       <BottomTab.Screen
         name='Map'
         component={Map}

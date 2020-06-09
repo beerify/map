@@ -42,6 +42,9 @@ export default function MobileMap() {
     setInfoBrewery(null)
   }
 
+  // if we click the map while a marker is open it will close but will be unhandled
+  const handleMapClose = () => openInfo && handleInfoClose()
+
   const handleClick = (props, marker, e, brewery) => {
     handleMapClose()
     setActive(marker)
@@ -49,9 +52,8 @@ export default function MobileMap() {
     setInfoBrewery(brewery)
   }
   
-  // if we click the map while a marker is open it will close but will be unhandled
-  const handleMapClose = () => openInfo && handleInfoClose()
   if (!cent || !cent.latitude || !cent.longitude) return null
+
   return (
     <View
       style={styles.container}
@@ -82,11 +84,7 @@ export default function MobileMap() {
             data.map((brewery, i) => {
               const lat = parseFloat(brewery.Lat)
               const lng = parseFloat(brewery.Lng)
-              // if (typeof(brewery.Lat) === 'string') {
-              //   console.log('bad region:')
-              //   console.log(brewery)
-              //   return null
-              // }
+
               return (
                 <Marker
                   key={i}
