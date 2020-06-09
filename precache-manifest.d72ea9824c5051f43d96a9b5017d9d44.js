@@ -1,23 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "72a48be59a5e7e863c2d",
-    "url": "/map/static/js/app.3dd714b9.chunk.js"
+    "revision": "9a68ba727a8dfaddcf7c",
+    "url": "/map/static/js/app.8b9233c0.chunk.js"
   },
   {
     "revision": "44d8cc4c23091c612070",
     "url": "/map/static/js/runtime~app.7c1b99e0.js"
   },
   {
-    "revision": "01116c4d3057b09afb8d",
-    "url": "/map/static/js/2.f8e6dddd.chunk.js"
+    "revision": "fd62fbc6b856ebf40e7d",
+    "url": "/map/static/js/2.0a7c7d56.chunk.js"
   },
   {
     "revision": "b2e0fc821c6886fb3940f85a3320003e",
     "url": "/map/./fonts/Ionicons.ttf"
   },
   {
+    "revision": "b06871f281fee6b241d60582ae9369b9",
+    "url": "/map/./fonts/FontAwesome.ttf"
+  },
+  {
     "revision": "49a79d66bdea2debf1832bf4d7aca127",
     "url": "/map/./fonts/SpaceMono-Regular.ttf"
+  },
+  {
+    "revision": "9e661e6af37f5f1610f2e30eb781e478",
+    "url": "/map/static/media/beer-127.9e661e6a.png"
   },
   {
     "revision": "3a2ba31570920eeb9b1d217cabe58315",
@@ -30,10 +38,6 @@ self.__precacheManifest = [
   {
     "revision": "6beba7e6834963f7f171d3bdd075c915",
     "url": "/map/./fonts/Feather.ttf"
-  },
-  {
-    "revision": "b06871f281fee6b241d60582ae9369b9",
-    "url": "/map/./fonts/FontAwesome.ttf"
   },
   {
     "revision": "c6aef942e3668158ec29d4adcb2e768f",
@@ -60,12 +64,12 @@ self.__precacheManifest = [
     "url": "/map/./fonts/SimpleLineIcons.ttf"
   },
   {
-    "revision": "48c7ed4e7da9792af288a60d7242d615",
-    "url": "/map/expo-service-worker.js"
-  },
-  {
     "revision": "ec543248d7b23864564429fc03837190",
     "url": "/map/serve.json"
+  },
+  {
+    "revision": "48c7ed4e7da9792af288a60d7242d615",
+    "url": "/map/expo-service-worker.js"
   },
   {
     "revision": "71033553ddc0843407efe54c23890fe2",
@@ -80,7 +84,7 @@ self.__precacheManifest = [
     "url": "/map/favicon.ico"
   },
   {
-    "revision": "12b296b10ba9293990606fa835a058de",
+    "revision": "1e0ae2006887ab8a2b17fba56c621a54",
     "url": "/map/index.html"
   },
   {
