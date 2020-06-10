@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/Map/static/js/0.7d981327.chunk.js"
   },
   {
-    "revision": "cc79cb5a1ce82712dd3e",
-    "url": "/Map/static/js/app.d1c93529.chunk.js"
+    "revision": "0faeedf8c183b2445413",
+    "url": "/Map/static/js/app.a8e0dec6.chunk.js"
   },
   {
     "revision": "f9c19609b8c660719aec",
@@ -64,12 +64,12 @@ self.__precacheManifest = [
     "url": "/Map/./fonts/SimpleLineIcons.ttf"
   },
   {
-    "revision": "ec543248d7b23864564429fc03837190",
-    "url": "/Map/serve.json"
-  },
-  {
     "revision": "48c7ed4e7da9792af288a60d7242d615",
     "url": "/Map/expo-service-worker.js"
+  },
+  {
+    "revision": "ec543248d7b23864564429fc03837190",
+    "url": "/Map/serve.json"
   },
   {
     "revision": "71033553ddc0843407efe54c23890fe2",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/Map/favicon.ico"
   },
   {
-    "revision": "ca477c8c23ea17ee49fb268b56e9082f",
+    "revision": "a623b6d3c2a5174dafd5171115f318a5",
     "url": "/Map/index.html"
   },
   {
