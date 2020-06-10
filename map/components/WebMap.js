@@ -1,12 +1,13 @@
 import { InfoWindow, Map, Marker, GoogleApiWrapper } from 'google-maps-react'
-import React, { lazy, Suspense, useEffect, useState } from 'react'
-import { Dimensions, Platform, StyleSheet, Text, View } from 'react-native'
-const ProvPick = lazy(() => import('./ProvPick'))
+import React, { Fragment, lazy, Suspense, useEffect, useState } from 'react'
+import { Dimensions, Image, Platform, StyleSheet, Text, View } from 'react-native'
 import icons from '../constants/icon'
 import locations from '../constants/locations'
 import provData from '../assets/data'
 
-const { getAvatar, icon, point } = icons
+const ProvPick = lazy(() => import('./ProvPick'))
+
+const { getAvatar, getBanner, icon, point } = icons
 const { iah } = locations
 const { height, width } = Dimensions.get('window')
 
@@ -60,7 +61,6 @@ function WebMap(props) {
   // if we click the map while a marker is open it will close but will be unhandled
   const handleMapClose = () => openInfo && handleInfoClose()
 
-
   return (
     <View id='map' style={styles.container}>
       <Suspense fallback={null}>
@@ -79,11 +79,48 @@ function WebMap(props) {
             visible={openInfo}
             marker={active}
             onClose={handleInfoClose}
-            o
+            children={null}
           >
-            <div>
-              {infoBrewery?.Brewery}
-            </div>
+            {
+              infoBrewery ? (
+                <View>
+                  {
+                    infoBrewery.banner ? (
+                      <img
+                        style={{height: 100}}
+                        src={getBanner(infoBrewery)}
+                      />
+                    ) : null
+                  }
+
+                  <h3>
+                    {infoBrewery?.name} | 
+                  </h3>
+                  <h5>
+                    Status: {infoBrewery.status}
+                  </h5>
+                  <h4>
+                    <a
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      href={infoBrewery.website}
+                    >
+                      website
+                    </a>
+                  </h4>
+                  <h5>
+                    {infoBrewery.description}
+                  </h5>
+                  <h5>
+                    {infoBrewery.address}
+                  </h5>
+                  <h5>
+                    {infoBrewery.tel}
+                  </h5>
+                </View>
+              ) : <Fragment></Fragment>
+            }
+
             </InfoWindow>
 
           {
@@ -91,9 +128,9 @@ function WebMap(props) {
               data.map((brewery, i) => (
                 <Marker
                   key={i}
-                  title={brewery.Brewery}
+                  title={brewery.name}
                   onClick={(props, marker, e,) => handleClick(props, marker, e, brewery)}
-                  position={{lat: brewery.Lat, lng: brewery.Lng}}
+                  position={{lat: brewery.lat, lng: brewery.lng}}
                   icon={{
                     url: getAvatar(brewery),
                     anchor: new google.maps.Point(point, point),

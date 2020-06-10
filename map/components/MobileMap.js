@@ -8,7 +8,7 @@ import provinces from '../constants/provinces'
 const ProvPick = lazy(() => import('./ProvPick'))
 import provData from '../assets/data'
 
-const { getAvatar, icon, point } = icons
+const { getAvatar, getBanner, icon, point } = icons
 const { iah } = locations
 
 export default function MobileMap() {
@@ -85,14 +85,14 @@ export default function MobileMap() {
         {
           !data ? null : (
             data.map((brewery, i) => {
-              const lat = parseFloat(brewery.Lat)
-              const lng = parseFloat(brewery.Lng)
+              const lat = parseFloat(brewery.lat)
+              const lng = parseFloat(brewery.lng)
 
               return (
                 <Marker
                   key={i}
-                  title={brewery.Brewery}
-                  description={brewery.Brewery}
+                  title={brewery.name}
+                  description={brewery.name}
                   onClick={(props, marker, e,) => handleClick(props, marker, e, brewery)}
                   coordinate={{latitude: lat, longitude: lng}}
                   image={getAvatar(brewery)}

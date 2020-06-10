@@ -1,0 +1,34 @@
+[
+  {
+    "address": "102 Copper Rd, Whitehorse, YT Y1A 2Z6, Canada",
+    "avatar": true,
+    "banner": true,
+    "city": "Whitehorse",
+    "description": "The oldest brewery North of 60 - Yukon Brewing has been crafting internationally renowned beer since 1997. PS: We also make whisky! https://t.co/PFYWFOLN3m",
+    "lat": 60.7380556,
+    "lng": -135.0788889,
+    "name": "Yukon Brewing",
+    "postal": "Y1A 2Z6",
+    "rating": 4.7,
+    "ratings": 80,
+    "status": "OPERATIONAL",
+    "tel": "(867) 668-4183",
+    "twitter": "yukonbeer",
+    "website": "http://yukonbeer.com/"
+  },
+  {
+    "address": "2A Collins Dr, Whitehorse, YT Y1A 0A8, Canada",
+    "avatar": false,
+    "banner": false,
+    "city": "Whitehorse",
+    "lat": 60.64399419999999,
+    "lng": -135.0300562,
+    "name": "Deep Dark Wood Brewing Company",
+    "postal": "Y1A 0A8",
+    "rating": 5,
+    "ratings": 3,
+    "status": "CLOSED_TEMPORARILY",
+    "tel": null,
+    "website": "https://deepdarkwoodbrewing.com/"
+  }
+]

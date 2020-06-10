@@ -9,10 +9,10 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "",
+    "icon": "./assets/images/beer-127.png",
+    "scheme": "beerify",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/beer-127.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -36,7 +36,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/images/favicon.png",
+      "favicon": "./assets/images/beer-32.png",
       "name": "Beer Map",
       "config": {
         "googleMapsApiKey": "AIzaSyBX9vQ8Vor-iw4ZZvrTR5STac1f0R9RsiQ"

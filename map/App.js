@@ -26,7 +26,7 @@ export default function App() {
       {Platform.OS === 'ios' && <StatusBar barStyle="dark-content" />}
       <NavigationContainer
         linking={LinkingConfiguration}
-        fallback={HomeScreen}
+        fallback={<HomeScreen />}
       >
         <Stack.Navigator>
           <Stack.Screen name="Root" component={BottomTabNavigator} />

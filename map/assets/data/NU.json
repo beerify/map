@@ -1,0 +1,19 @@
+[
+  {
+    "address": "Iqaluit Ln, Iqaluit, NU X0A, Canada",
+    "avatar": true,
+    "banner": false,
+    "city": "Iqaluit",
+    "description": "Arctic Beer coming to a place near you soon.",
+    "lat": 63.7449553,
+    "lng": -68.5505948,
+    "name": "Nunavut Brewing Company",
+    "postal": "X0A",
+    "rating": 5,
+    "ratings": 30,
+    "status": "OPERATIONAL",
+    "tel": "(867) 979-2337",
+    "twitter": "NUBrewCo",
+    "website": "http://www.nubrewbeer.ca/"
+  }
+]
