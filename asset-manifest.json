@@ -24,7 +24,6 @@
     "favicon-32.png": "/map/favicon-32.png",
     "favicon.ico": "/map/favicon.ico",
     "index.html": "/map/index.html",
-    "manifest.json": "/map/manifest.json",
     "serve.json": "/map/serve.json"
   },
   "entrypoints": [

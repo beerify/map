@@ -84,12 +84,8 @@ self.__precacheManifest = [
     "url": "/map/favicon.ico"
   },
   {
-    "revision": "3ea875105077d9db38df182a714e32ea",
+    "revision": "0e3287c8188f7c4eecc7bf3abe8a9655",
     "url": "/map/index.html"
-  },
-  {
-    "revision": "a9d6f115435dabfb760008b7e8a61916",
-    "url": "/map/manifest.json"
   },
   {
     "revision": "f1fd251eb29d758d111b18c700ce3d36",
