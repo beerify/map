@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "map",
-    "slug": "map",
+    "slug": "",
     "platforms": [
       "ios",
       "android",
@@ -10,7 +10,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
@@ -37,7 +37,7 @@
     },
     "web": {
       "favicon": "./assets/images/favicon.png",
-      "name": "beer map",
+      "name": "Beer Map",
       "config": {
         "googleMapsApiKey": "AIzaSyBX9vQ8Vor-iw4ZZvrTR5STac1f0R9RsiQ"
       }

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { lazy, Suspense, useEffect, useState } from 'react'
 import { Dimensions, Picker, Platform, Text, View } from 'react-native'
 import styles from './MobileMapStyle'
 import MapView, { CallOut, Marker, PROVIDER_GOOGLE } from 'react-native-maps'
 import icons from '../constants/icon'
 import locations from '../constants/locations'
 import provinces from '../constants/provinces'
-import ProvPick from './ProvPick'
+const ProvPick = lazy(() => import('./ProvPick'))
 import provData from '../assets/data'
 
 const { getAvatar, icon, point } = icons
@@ -58,7 +58,10 @@ export default function MobileMap() {
     <View
       style={styles.container}
       contentContainerStyle={styles.contentContainer}>
-      <ProvPick callback={pickerCallback} />
+        <Suspense fallback={null}>
+          <ProvPick callback={pickerCallback} />
+        </Suspense>
+      
       <MapView
         zoom={9}
         minZoomLevel={3}

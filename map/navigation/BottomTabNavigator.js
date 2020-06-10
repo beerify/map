@@ -14,7 +14,8 @@ const Map = Platform.select({
 })()
 
 const BottomTab = createBottomTabNavigator()
-const INITIAL_ROUTE_NAME = 'Map'
+
+const INITIAL_ROUTE_NAME = 'map'
 
 export default function BottomTabNavigator({ navigation, route }) {
   // Set the header title on the parent stack navigator depending on the
@@ -24,18 +25,18 @@ export default function BottomTabNavigator({ navigation, route }) {
   return (
     <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
       <BottomTab.Screen
-        name='Map'
+        name='map'
         component={Map}
         options={{
-          title: 'Map',
+          title: 'map',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name='md-map' />,
         }}
       />
       <BottomTab.Screen
-        name='Info'
+        name='info'
         component={HomeScreen}
         options={{
-          title: 'Info',
+          title: 'info',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name='md-code-working' />,
         }}
       />
@@ -47,9 +48,9 @@ function getHeaderTitle(route) {
   const routeName = route.state?.routes[route.state.index]?.name ?? INITIAL_ROUTE_NAME
 
   switch (routeName) {
-    case 'Info':
+    case 'info':
       return 'About this app'
-    case 'Map':
+    case 'map':
       return 'Beer Map'
     default:
       return null

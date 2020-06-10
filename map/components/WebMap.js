@@ -1,7 +1,7 @@
 import { InfoWindow, Map, Marker, GoogleApiWrapper } from 'google-maps-react'
-import React, { useEffect, useState } from 'react'
+import React, { lazy, Suspense, useEffect, useState } from 'react'
 import { Dimensions, Platform, StyleSheet, Text, View } from 'react-native'
-import ProvPick from './ProvPick'
+const ProvPick = lazy(() => import('./ProvPick'))
 import icons from '../constants/icon'
 import locations from '../constants/locations'
 import provData from '../assets/data'
@@ -63,7 +63,9 @@ function WebMap(props) {
 
   return (
     <View id='map' style={styles.container}>
-      <ProvPick callback={pickerCallback} />
+      <Suspense fallback={null}>
+        <ProvPick callback={pickerCallback} />
+      </Suspense>
       <Text>
         <Map
           google={props.google}
