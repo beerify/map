@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 
 export default function App() {
   const loaded = useCachedResources()
-
+  console.log(process.env.PUBLIC_URL)
   if (!loaded) return null
 
   return (

@@ -1,5 +1,10 @@
 ## About The Data
 
+WIP: currently working on bringing in cleaner and more robust data...
+
+
+### details...
+
 Files listed as {PROV}.json are scrapes from Google Places / Twitter
 
 The app will feed off of these files instead of a database
