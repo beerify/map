@@ -1,4 +1,4 @@
-[![Version](https://img.shields.io/badge/VERSION-0.3-BLUE)](https://img.shields.io/badge/VERSION-0.2-BLUE) [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0.txt)
+[![Version](https://img.shields.io/badge/VERSION-0.3-BLUE)](https://img.shields.io/badge/VERSION-0.3-BLUE) [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0.txt)
 # Canada Beer Map
 
 *Please note this is a Work in Progress*
