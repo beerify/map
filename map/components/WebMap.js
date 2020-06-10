@@ -5,6 +5,8 @@ import icons from '../constants/icon'
 import locations from '../constants/locations'
 import provData from '../assets/data'
 
+const BrewPick = lazy(() => import('./BrewPick'))
+const CityPick = lazy(() => import('./CityPick'))
 const ProvPick = lazy(() => import('./ProvPick'))
 
 const { getAvatar, getBanner, icon, point } = icons
@@ -32,17 +34,57 @@ function WebMap(props) {
   const [openInfo, setOpenInfo] = useState(false)
   const [active, setActive] = useState(null)
   const [infoBrewery, setInfoBrewery] = useState(null)
+  const [cities, setCities] = useState([])
+  const [city, setCity] = useState('All')
+  const [filteredData, setFilteredData] = useState([])
+  const [zoom, setZoom] = useState(12)
 
   // set initial state
   useEffect(() => {
-    setData(provData['ON'])
+    const initData = provData['ON']
+    setData(initData)
+    setFilteredData(initData)
+    setUniqueCities(initData)
   }, [])
 
-  const pickerCallback = (prov, cent) => {
-    if (!prov) return
+  // maybe do this on init in assets/data???
+  const setUniqueCities = data => {
+    const list = data.map(o => o.city).filter(o => !!o)
+    const uniq = [...new Set(list)].sort()
+    setCities(uniq)
+  }
+
+  const pickerCallback = (newProv, cent) => {
+    if (!newProv || newProv === prov) return
     setCent(cent)
-    setProv(prov)
-    setData(provData[prov])
+    setProv(newProv)
+    const upData = provData[newProv]
+    setData(upData)
+    setFilteredData(upData)
+    setUniqueCities(upData)
+  }
+
+  const brewCallback = (val) => {
+    setCent({
+      lat: val.lat,
+      lng: val.lng
+    })
+  }
+
+  const cityCallback = (city) => {
+    if (!city) return
+    handleInfoClose()
+    if (city === 'All') {
+      setFilteredData(data)
+      setCent(locations.iah)
+      setCity('All')
+      return
+    }
+    setCity(city)
+    const filtered = data.filter(o => o.city === city)
+    setFilteredData(filtered)
+    const { lat, lng } = filtered[0]
+    setCent({lat, lng})
   }
 
   const handleInfoClose = () => {
@@ -66,11 +108,21 @@ function WebMap(props) {
       <Suspense fallback={null}>
         <ProvPick callback={pickerCallback} />
       </Suspense>
+      <Suspense fallback={null}>
+        <CityPick data={data} cities={cities} callback={cityCallback} />
+      </Suspense>
+      <Suspense fallback={null}>
+        {
+          city === 'All' || filteredData.length === 1 ? null : (
+            <BrewPick breweries={filteredData} callback={brewCallback} />
+          )
+        }
+      </Suspense>
       <Text>
         <Map
           google={props.google}
           style={gmap}
-          zoom={7}
+          zoom={zoom}
           center={cent}
           initialCenter={locations.iah}
           onClick={handleMapClose}
@@ -94,7 +146,7 @@ function WebMap(props) {
                   }
 
                   <h3>
-                    {infoBrewery?.name} | 
+                    {infoBrewery?.name}
                   </h3>
                   <h5>
                     Status: {infoBrewery.status}
@@ -124,8 +176,8 @@ function WebMap(props) {
             </InfoWindow>
 
           {
-            !data ? null : (
-              data.map((brewery, i) => (
+            !filteredData ? null : (
+              filteredData.map((brewery, i) => (
                 <Marker
                   key={i}
                   title={brewery.name}
