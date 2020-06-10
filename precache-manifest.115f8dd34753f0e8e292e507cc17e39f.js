@@ -64,12 +64,12 @@ self.__precacheManifest = [
     "url": "/map/./fonts/SimpleLineIcons.ttf"
   },
   {
-    "revision": "48c7ed4e7da9792af288a60d7242d615",
-    "url": "/map/expo-service-worker.js"
-  },
-  {
     "revision": "ec543248d7b23864564429fc03837190",
     "url": "/map/serve.json"
+  },
+  {
+    "revision": "48c7ed4e7da9792af288a60d7242d615",
+    "url": "/map/expo-service-worker.js"
   },
   {
     "revision": "521f8c844d3af13c3d20ba01b2fc5274",
