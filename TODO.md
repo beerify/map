@@ -1,16 +1,12 @@
 ### TODO
 
 - incorporate JSJ's Ontario Data
-- populate info window with more brewery data
+- info window on mobile
 - city select / search
 - brewery select / search
-- mobile views and renders
-- download twitter/ig avatars for local consumption
-  - we need larger images for the mobile view
-  - using generics only for now
 - fix page refresh
-  - site crashes if refreshed
-  - figure out hosting with gh-pages
+  - site crashes if refreshed on /info
+  - figure out why
 
 ## Issues
 

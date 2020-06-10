@@ -9,6 +9,8 @@ The Beer Map is available as a website or as a mobile app. It is not available i
 
 ## Website
 
+*you may need to clear your browser cache to get the latest version*
+
 [Web Demo](https://beerify.github.io/map/)
 
 ## Mobile
@@ -35,11 +37,14 @@ Scan This Code in the Expo App:
 | [TODO.md](https://github.com/beerify/map/blob/master/TODO.md)  | A list of things not yet done   |
 | [DEVELOPMENT.md](https://github.com/beerify/map/blob/master/DEVELOPMENT.md)  | how to install and run the code|
 
+## Images
+- avatars and banners are served from google cloud buckets
+- images are ripped from twitter
 
 ## Data
 - Data was scraped from Twitter and Google Places
 - Each province has its own json file in /data/{PR}.json
-  - ie: /data/ON.json etc
+  - ie: assets/data/ON.json etc
 - This is the backend there is no database
 
 ### Errors in Data

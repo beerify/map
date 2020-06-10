@@ -1,6 +1,6 @@
 map/.expo/*
 map/node_modules
-
+map/dist
 node_modules/
 node_modules/**/*
 
@@ -17,3 +17,4 @@ web-build/
 .DS_Store
 
 kmldata/
+.expo
